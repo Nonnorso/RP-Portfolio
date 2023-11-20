@@ -1,0 +1,14 @@
+.footer-container {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+  }
+  
+  .contact-column,
+  .legal-column {
+    flex: 1;
+    margin-right: 20px;
+    color: white;
+  }

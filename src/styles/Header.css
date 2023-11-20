@@ -1,0 +1,47 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .header-title a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right:50px;
+    transition: transform 0.4s ease-out;
+  }
+
+  .menu-icon.open {
+    transform: rotate(90deg);
+  }
+  
+  .menu {
+    overflow: hidden;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    width: 130px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    transform-origin: top center;
+    animation: slideDownAnimation 0.4s ease-out;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px); 
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out, transform 0.4s ease-out;
+  }
+  
+  .menu.open {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
+    width:130px;
+  }
