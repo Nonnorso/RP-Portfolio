@@ -75,19 +75,19 @@
       border-bottom: 2px solid goldenrod;
   };
 
-  .menu.open{
+  .menu{
     display: flex;
     flex-direction: column;
   }
   
-  .menu.open a{
+  .menu a{
     text-decoration: none;
     color: #000000;
     font-size:15px;
     padding-bottom: 1px;
    }
 
-   .menu.open ul{
+   .menu ul{
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -96,6 +96,6 @@
     align-items: center;
   }
 
-  .menu.open ul a:hover {
+  .menu ul a:hover {
     border-bottom: 2px solid goldenrod;
   }
