@@ -1,0 +1,38 @@
+@import 'settings.scss';
+
+.Txt404{
+    font-size: 20px;
+    text-align: center;
+  }
+  
+.Title404{
+    font-size: 100px;
+  }
+  
+.Style404{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    justify-content: center;
+    min-height: 70vh;
+
+    @media (max-width: $smallScreen) {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  }
+
+.Style404 a{
+  text-decoration: none;
+  color: $black;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.4s ease, transform 0.4s ease;
+  
+}
+
+.Style404 a:hover{
+  border-bottom: 2px solid $gold;
+  transform: scale(1.2);
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MenuDropdown from '../Header/MenuDropDown';
-import '../../styles/Header.css';
+import '../../styles/Header.scss';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -9,6 +9,10 @@ const Header = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -46,7 +50,7 @@ const Header = () => {
               null
             )}
       
-      {isMobile ? <MenuDropdown isOpen={isMenuOpen} /> : null}
+      {isMobile ? <MenuDropdown isOpen={isMenuOpen} closeMenu={closeMenu} /> : null}
     </div>
   );
 };
