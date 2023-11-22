@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import MenuDropdown from '../Header/MenuDropDown';
 import '../../styles/Header.scss';
 
@@ -34,16 +34,21 @@ const Header = () => {
       {isMobile ? null : (
         <div className='DesktopNav'>
           <ul>
-            <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/about">À propos</Link></li>
-            <li><Link to="/portfolios">Portfolios</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><NavLink exact="true" to="/" activeclassname="active">Accueil</NavLink></li>
+            <li><NavLink to="/about" activeclassname="active">À propos</NavLink></li>
+            <li><NavLink to="/portfolios" activeclassname="active">Portfolios</NavLink></li>
+            <li><NavLink to="/contact" activeclassname="active">Contact</NavLink></li>
           </ul>
         </div>
       )}
 
       {isMobile ? (
-              <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+              <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} 
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleMenu();
+              }}
+              >
                 ☰
               </div>
             ) : (

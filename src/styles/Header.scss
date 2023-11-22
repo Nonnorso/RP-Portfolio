@@ -104,6 +104,11 @@
     
   }
 
+  .DesktopNav a.active {
+    border-bottom: 2px solid $gold;
+    transform: scale(1.2);
+  }
+
   .menu{
     display: flex;
     flex-direction: column;
