@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/HomePage.scss';
 import Banner from '../components/Banner'
 import SkillCard from '../components/SkillCard'
 import ProjectCard from '../components/ProjectCard'
 
 function HomePage() {
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
+
   return ( 
     <div>
       <Banner />
@@ -17,7 +24,7 @@ function HomePage() {
 
       <section className='portfolio'>
         <h2>Quelsques projets...</h2>
-        <ProjectCard />
+        <ProjectCard onNavigate={handleNavigate} />
         <p>Vous souhaitez découvrir l'ensemble de mes travaux ? Consultez la page complète de tous mes projets. Vous y trouverez une variété de projets mettant en avant mes compétences et ma passion pour le développement web.</p>
         <button><Link to="/Portfolio">Tous mes projets</Link></button>
       </section>
