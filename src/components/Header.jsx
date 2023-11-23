@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,NavLink } from 'react-router-dom';
 import '../styles/Header.scss';
 
 const Header = () => {
@@ -48,9 +48,9 @@ const Header = () => {
       {isMobile ? null : (
         <div className='DesktopNav'>
           <ul>
-            <li><Link to="/" activeclassname="active">Accueil</Link></li>
-            <li><Link to="/about" activeclassname="active">À propos</Link></li>
-            <li><Link to="/portfolio" activeclassname="active">Portfolio</Link></li>
+            <li><NavLink to="/" activeclassname="active">Accueil</NavLink></li>
+            <li><NavLink to="/about" activeclassname="active">À propos</NavLink></li>
+            <li><NavLink to="/portfolio" activeclassname="active">Portfolio</NavLink></li>
           </ul>
         </div>
       )}

@@ -14,7 +14,7 @@ export default function About (){
           <section className="more">
             <h2>Mon parcours</h2>
             <p>Pour plus de détails sur mon parcours académique et mes expériences professionnelles, n’hesitez pas à télécharger mon CV !</p>
-            <btn>Télécharger mon CV</btn>
+            <button>Télécharger mon CV</button>
           </section>
         </div>
       );

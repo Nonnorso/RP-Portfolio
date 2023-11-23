@@ -2,10 +2,10 @@ export default function ProjectCard (){
 
     return(
         <div>
-            <img src="" alt="" title="Titre di projet">Image du projet</img>
+            <img src="" alt="" title="Image du projet" />
             <h2>titre du projet</h2>
             <p>courte description avec ellipsis</p>
-            <btn>Lien vers le projet</btn>
+            <button>Lien vers le projet</button>
         </div>
     )
 }

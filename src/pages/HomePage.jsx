@@ -19,7 +19,7 @@ function HomePage() {
         <h2>Quelsques projets...</h2>
         <ProjectCard />
         <p>Vous souhaitez découvrir l'ensemble de mes travaux ? Consultez la page complète de tous mes projets. Vous y trouverez une variété de projets mettant en avant mes compétences et ma passion pour le développement web.</p>
-        <btn><Link to="/Portfolio">Tous mes projets</Link></btn>
+        <button><Link to="/Portfolio">Tous mes projets</Link></button>
       </section>
     </div>
   );

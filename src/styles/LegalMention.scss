@@ -1,0 +1,49 @@
+@import 'settings.scss';
+
+.LegalMentionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    min-height: 100vh;  
+}
+
+.LegalMentionContent {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+h2 {
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h3 {
+    padding-left: 40px;
+    padding-right:30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom:20px;
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+.borderUnderline{
+    border-bottom: solid 2px $gold;
+}
