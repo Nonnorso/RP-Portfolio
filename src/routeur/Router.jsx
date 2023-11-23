@@ -3,10 +3,9 @@ import { createBrowserRouter } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import About from "../pages/About";
 import Layout from "../components/Layout";
-import PortfolioUnique from "../pages/PortfolioUnique";
+import Project from "../pages/Project";
 import Error404 from "../pages/Error404";
-import Portfolios from "../pages/Portfolios";
-import Contact from "../pages/Contact";
+import Portfolio from "../pages/Portfolio";
 import LegalMentions from "../pages/LegalMentions";
 
 
@@ -21,21 +20,15 @@ const Router = createBrowserRouter([
       },
       {
         path: "About",
-        element: (
-            <About />
-        ),
+        element: <About />
       },
       {
-        path: "Portfolios",
-        element: <Portfolios />
+        path: "Portfolio",
+        element: <Portfolio />
       },
       {
-        path: "PortfolioUnique",
-        element: <PortfolioUnique />
-      },
-      {
-        path: "Contact",
-        element: <Contact />
+        path: "Project",
+        element: <Project />
       },
       {
         path: "LegalMentions",

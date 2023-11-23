@@ -1,30 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import MenuDropdown from '../Header/MenuDropDown';
+import React, { useState, useEffect, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/Header.scss';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = useCallback(() => {
+    setMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
+  }, []);
 
-  const closeMenu = () => {
+  const closeMenu = useCallback(() => {
     setMenuOpen(false);
-  };
+  }, []);
+
+  const handleOutsideClick = useCallback((event) => {
+    if (isMenuOpen && !event.target.closest('.menu')) {
+      closeMenu();
+    }
+  }, [isMenuOpen, closeMenu]);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
+
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    window.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, [handleOutsideClick]);
 
   return (
     <div className="header-container">
@@ -34,28 +48,34 @@ const Header = () => {
       {isMobile ? null : (
         <div className='DesktopNav'>
           <ul>
-            <li><NavLink exact="true" to="/" activeclassname="active">Accueil</NavLink></li>
-            <li><NavLink to="/about" activeclassname="active">À propos</NavLink></li>
-            <li><NavLink to="/portfolios" activeclassname="active">Portfolios</NavLink></li>
-            <li><NavLink to="/contact" activeclassname="active">Contact</NavLink></li>
+            <li><Link to="/" activeclassname="active">Accueil</Link></li>
+            <li><Link to="/about" activeclassname="active">À propos</Link></li>
+            <li><Link to="/portfolio" activeclassname="active">Portfolio</Link></li>
           </ul>
         </div>
       )}
 
       {isMobile ? (
-              <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} 
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleMenu();
-              }}
-              >
-                ☰
-              </div>
-            ) : (
-              null
-            )}
-      
-      {isMobile ? <MenuDropdown isOpen={isMenuOpen} closeMenu={closeMenu} /> : null}
+        <div
+          className={`menu-icon ${isMenuOpen ? 'open' : ''}`}
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleMenu();
+          }}
+        >
+          ☰
+        </div>
+      ) : null}
+
+      {isMobile ? (
+        <nav className={`menu ${isMenuOpen ? 'open' : ''}`}>
+          <ul>
+            <li><Link to="/" onClick={closeMenu}>Accueil</Link></li>
+            <li><Link to="/about" onClick={closeMenu}>À propos</Link></li>
+            <li><Link to="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
+          </ul>
+        </nav>
+      ) : null}
     </div>
   );
 };

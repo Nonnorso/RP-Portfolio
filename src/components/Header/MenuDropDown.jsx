@@ -7,7 +7,6 @@ const MenuDropdown = ({ isOpen, closeMenu }) => {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      // Vérifie si le clic n'est pas à l'intérieur du menu
       if (isOpen && !event.target.closest('.menu')) {
         closeMenu();
       }
@@ -25,8 +24,7 @@ const MenuDropdown = ({ isOpen, closeMenu }) => {
       <ul>
         <li><Link to="/" onClick={closeMenu}>Accueil</Link></li>
         <li><Link to="/about" onClick={closeMenu}>À propos</Link></li>
-        <li><Link to="/portfolios" onClick={closeMenu}>Portfolios</Link></li>
-        <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+        <li><Link to="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
       </ul>
     </nav>
   );
