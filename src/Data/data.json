@@ -1,0 +1,66 @@
+{
+    "banner": [
+      {
+        "image": "image_banner1.jpg",
+        "titre": "Raphael Philippot – Integrateur Web, Développeur Web Front-End.",
+        "description": "Bienvenue sur mon portfolio ! Je suis Raphael Philippot, passionné de développement web front-end basé à Béziers. Avec un goût prononcé pour la création d'interfaces utilisateur intuitives et esthétiques, je m'efforce de donner vie à des expériences web exceptionnelles. Explorez mes pro-jets ci-dessous pour découvrir mon approche du développement front-end."
+      },
+      {
+        "image": "image_banner2.jpg",
+        "titre": "Découvrez Mes Réalisations ",
+        "description": "Explorez une sélection de projets sur lesquels j'ai travaillé. Chaque projet représente un défi unique et met en lumière mes compétences en développement web."
+      }
+    ],
+    "projets": [
+      {
+        "titre": "OhMyFood",
+        "description_courte": "Description courte du Projet 1",
+        "description_complete": "Description complète du Projet 1",
+        "image_acceuil": "projet1_acceuil.jpg",
+        "images_apercu": ["projet1_image1.jpg", "projet1_image2.jpg", "projet1_image3.jpg", "projet1_image4.jpg"]
+      },
+      {
+        "titre": "Print It",
+        "description_courte": "Description courte du Projet 2",
+        "description_complete": "Description complète du Projet 2",
+        "image_acceuil": "projet2_acceuil.jpg",
+        "images_apercu": ["projet2_image1.jpg", "projet2_image2.jpg", "projet2_image3.jpg", "projet2_image4.jpg"]
+      },
+      {
+        "titre": "Sophie Bluel Architecte",
+        "description_courte": "Description courte du Projet 3",
+        "description_complete": "Description complète du Projet 3",
+        "image_acceuil": "projet3_acceuil.jpg",
+        "images_apercu": ["projet3_image1.jpg", "projet3_image2.jpg", "projet3_image3.jpg", "projet3_image4.jpg"]
+      },
+      {
+        "titre": "Kasa",
+        "description_courte": "Description courte du Projet 4",
+        "description_complete": "Description complète du Projet 4",
+        "image_acceuil": "projet4_acceuil.jpg",
+        "images_apercu": ["projet4_image1.jpg", "projet4_image2.jpg", "projet4_image3.jpg", "projet4_image4.jpg"]
+      },
+      {
+        "titre": "Nina Cardiccu Photographe",
+        "description_courte": "Description courte du Projet 5",
+        "description_complete": "Description complète du Projet 5",
+        "image_acceuil": "projet5_acceuil.jpg",
+        "images_apercu": ["projet5_image1.jpg", "projet5_image2.jpg", "projet5_image3.jpg", "projet5_image4.jpg"]
+      },
+      {
+        "titre": "724events",
+        "description_courte": "Description courte du Projet 6",
+        "description_complete": "Description complète du Projet 6",
+        "image_acceuil": "projet6_acceuil.jpg",
+        "images_apercu": ["projet6_image1.jpg", "projet6_image2.jpg", "projet6_image3.jpg", "projet6_image4.jpg"]
+      },
+      {
+        "titre": "ARGENTBANK",
+        "description_courte": "Description courte du Projet 7",
+        "description_complete": "Description complète du Projet 7",
+        "image_acceuil": "projet7_acceuil.jpg",
+        "images_apercu": ["projet7_image1.jpg", "projet7_image2.jpg", "projet7_image3.jpg", "projet7_image4.jpg"]
+      }
+    ]
+  }
+  
