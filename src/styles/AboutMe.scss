@@ -1,0 +1,28 @@
+@import 'settings.scss';
+
+.profile-container{
+    display:flex;
+    background-color: $black;
+}
+
+.profile-pic{
+    width:250px;
+    height:250px;
+
+}
+
+.profile-text{
+    color: $white;
+
+}
+
+.profile-initial{
+    border-bottom: 2px solid $gold;
+
+}
+
+.profile-description{
+    margin:0;
+    padding:0;
+
+}
