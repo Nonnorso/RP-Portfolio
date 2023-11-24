@@ -4,6 +4,7 @@ import '../styles/HomePage.scss';
 import Banner from '../components/Banner'
 import SkillCard from '../components/SkillCard'
 import ProjectCard from '../components/ProjectCard'
+import data from '../Data/data.json';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ function HomePage() {
 
       <section className='competences'>
         <h2>Compétences</h2>
-        <SkillCard />
+        <SkillCard skills={data.skills}/>
       </section>
 
       <section className='portfolio'>
