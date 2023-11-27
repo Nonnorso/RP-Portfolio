@@ -1,6 +1,6 @@
 @import 'settings.scss';
 
-.HomePgeContainer {
+.HomePageContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,10 +8,74 @@
     background-color: $black;
     color: $white;
     min-height: 100vh;  
-}
+    }
 
 .HomePageContent {
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
+}
+
+.competences, .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap:30px;
+    padding-bottom:50px;
+    align-items: center;
+
+    h2{
+        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 30px;
+    }
+}
+
+.portfolio{
+    color: $white;
+    background-image: url('../../public/assets/banner/fond-2.webp'); 
+    background-size:100vh;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.portfolio button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: $white;
+    height: 40px;
+    transition: all 0.4s ease;
+    margin-top:15px;
+
+    a{
+        text-decoration: none ;
+        color: $black;
+        padding-bottom:5px;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1em;
+        transition: font-size 0.4s ease;
+    }
+
+    &:hover {
+        border: 2px solid $gold;
+        box-shadow: 0 0 20px $gold; 
+        border-radius: 25px;
+        transform: scale(1.1);
+        
+    }
+}
+
+.portfolio p{
+    margin: 0;
+    font-size: 20px;
+    padding-left:100px;
+    padding-right: 100px;
+    padding-bottom: 0px;
 }

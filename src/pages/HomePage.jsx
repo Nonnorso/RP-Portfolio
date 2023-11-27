@@ -14,6 +14,8 @@ function HomePage() {
     navigate(path);
   };
 
+  const latestProjects = data.projets.slice(-3);
+
   return ( 
     <div className="HomepageContainer">
       <div className="HomePageContent">
@@ -21,13 +23,13 @@ function HomePage() {
         <Banner data={data.banner[0]}/>
 
         <section className='competences'>
-          <h2>Compétences</h2>
+          <h2>Quelques compétences</h2>
           <SkillCard skills={data.skills}/>
         </section>
 
         <section className='portfolio'>
-          <h2>Quelsques projets...</h2>
-          <ProjectCard onNavigate={handleNavigate} />
+          <h2>Mes dernieres realisations</h2>
+          <ProjectCard projects={latestProjects} onNavigate={handleNavigate} />
           <p>Vous souhaitez découvrir l'ensemble de mes travaux ? Consultez la page complète de tous mes projets. Vous y trouverez une variété de projets mettant en avant mes compétences et ma passion pour le développement web.</p>
           <button><Link to="/Portfolio">Tous mes projets</Link></button>
         </section>
