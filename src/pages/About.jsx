@@ -1,9 +1,11 @@
 import AboutMe from "../components/AboutMe";
+import "../styles/About.scss"
 
 export default function About (){
 
     return ( 
-        <div>
+      <div className="AboutContainer">
+      <div className="AboutContent">
           <AboutMe />
 
           <section className="formation">
@@ -17,5 +19,6 @@ export default function About (){
             <button>Télécharger mon CV</button>
           </section>
         </div>
+      </div>
       );
 }
