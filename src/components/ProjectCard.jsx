@@ -4,6 +4,7 @@ import "../styles/ProjectCard.scss"
 export default function ProjectCard ({ projects, onNavigate }){
     const handleProjectClick = (projectId) => {
         onNavigate(`/Projet/${projectId}`);
+        window.scrollTo(0, 0);
       };
 
       return (

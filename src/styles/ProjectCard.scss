@@ -47,11 +47,6 @@
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
-            transition: -webkit-line-clamp 0.4s ease; 
-            
-        &:hover {
-            -webkit-line-clamp: unset;
-        }
     }
 
         button {
@@ -64,6 +59,7 @@
             transition: all 0.4s ease;
             margin-top:15px;
             margin-bottom:15px;
+            cursor: pointer;
     
             a{
                 text-decoration: none ;
