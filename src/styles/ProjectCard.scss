@@ -84,3 +84,32 @@
         }
     }
 }
+
+@media (max-width: $smallScreen) {
+    .project-card .dimensionsCard {
+        width: 275px;
+        gap: 5px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .project-card .dimensionsCard img {
+        height: 120px;}
+
+    .project-card .dimensionsCard h2 {
+        font-size: 15px;
+    }
+
+    .project-card .dimensionsCard p {
+        font-size:15px;
+    }
+
+    .project-card {
+        gap: 20px;
+    }
+
+    .project-card .dimensionsCard button {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}

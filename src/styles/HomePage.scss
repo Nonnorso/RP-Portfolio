@@ -79,3 +79,34 @@
     padding-right: 100px;
     padding-bottom: 0px;
 }
+
+@media (max-width: $smallScreen) {
+
+    .HomepageContainer{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .competences h2, .portfolio  h2{
+        font-size:20px;
+        padding:0;
+        padding-top:10px;
+    }
+
+    .competences, .portfolio {
+        gap:20px;
+        padding-bottom: 20px;        
+    }
+
+    .portfolio p {
+        margin: 0;
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+
+    .portfolio button {
+        margin-top: 0px;
+    }
+}

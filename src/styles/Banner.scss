@@ -73,6 +73,25 @@
     }
   
     @media (max-width: $smallScreen) {
-     
+
+        .banner-container {
+            margin-bottom: 10px;
+           
+        }
+
+        h2 {
+            font-size : 15px;
+        }
+
+        .banner-content {
+            gap: 30px;
+            padding: 20px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        p {
+            font-size: 12px;
+        }     
     }
   }
