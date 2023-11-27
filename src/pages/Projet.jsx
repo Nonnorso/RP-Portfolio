@@ -5,7 +5,6 @@ import PreviewProject from "../components/PreviewProject";
 import data from '../Data/data.json';
 
 export default function Projects() {
-
   const { projectId } = useParams();
   const projectToShow = data.projets.find(project => project.id === parseInt(projectId));
 
@@ -15,6 +14,12 @@ export default function Projects() {
 
   return (
     <div>
+      <img
+        className="projectbanner"
+        src={`${process.env.PUBLIC_URL}/${projectToShow.image_acceuil}`}
+        alt="project-banner"
+        title="project-banner"
+      />
       <div key={projectId}>
         <Project project={projectToShow} />
         <PreviewProject project={projectToShow} />
