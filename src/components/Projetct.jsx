@@ -1,10 +1,12 @@
-export default function Projetc () {
+import React from "react";
+
+export default function Project ({ project }) {
 
     return(
         <div>
-            <h2>titre du projet</h2>
-            <p>description complète du projet</p>
-            <button>voir le code et ou voir le site</button>
+            <h2>{project.titre}</h2>
+            <p>{project.description_complete}</p>
+            <button>Voir le code</button>
         </div>
     )
 }

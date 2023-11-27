@@ -9,12 +9,13 @@ import data from '../Data/data.json';
 function HomePage() {
   const navigate = useNavigate();
 
-  const handleNavigate = (path) => {
-    window.scrollTo(0, 0);
-    navigate(path);
+  const handleNavigate = (projectId) => {
+    navigate(`${projectId}`);
   };
 
   const latestProjects = data.projets.slice(-3);
+
+  
 
   return ( 
     <div className="HomepageContainer">
