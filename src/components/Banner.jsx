@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/Banner.scss"
 
-export default function Banner() {
+export default function Banner({ data }) {
   return (
-    <div>
-      <img src="" alt=" " title="image banniere" />
-      <h2>titre</h2>
-      <p>presentation rapide</p>
-      <button>
-        <Link to="/About">bouton en savoir plus</Link>
-      </button>
+    <div className="banner-container">
+      <img src={data.image} alt="banniere" title="banniere" />
+        <div className="banner-content">
+        <h2>{data.titre}</h2>
+        <p>{data.description}</p>
+        <button>
+          <Link to="/About">En savoir plus</Link>
+        </button>
+      </div>
     </div>
   );
 }

@@ -15,20 +15,23 @@ function HomePage() {
   };
 
   return ( 
-    <div>
-      <Banner />
+    <div className="HomepageContainer">
+      <div className="HomePageContent">
 
-      <section className='competences'>
-        <h2>Compétences</h2>
-        <SkillCard skills={data.skills}/>
-      </section>
+        <Banner data={data.banner[0]}/>
 
-      <section className='portfolio'>
-        <h2>Quelsques projets...</h2>
-        <ProjectCard onNavigate={handleNavigate} />
-        <p>Vous souhaitez découvrir l'ensemble de mes travaux ? Consultez la page complète de tous mes projets. Vous y trouverez une variété de projets mettant en avant mes compétences et ma passion pour le développement web.</p>
-        <button><Link to="/Portfolio">Tous mes projets</Link></button>
-      </section>
+        <section className='competences'>
+          <h2>Compétences</h2>
+          <SkillCard skills={data.skills}/>
+        </section>
+
+        <section className='portfolio'>
+          <h2>Quelsques projets...</h2>
+          <ProjectCard onNavigate={handleNavigate} />
+          <p>Vous souhaitez découvrir l'ensemble de mes travaux ? Consultez la page complète de tous mes projets. Vous y trouverez une variété de projets mettant en avant mes compétences et ma passion pour le développement web.</p>
+          <button><Link to="/Portfolio">Tous mes projets</Link></button>
+        </section>
+      </div>
     </div>
   );
 }
