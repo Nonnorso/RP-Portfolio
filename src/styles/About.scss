@@ -9,3 +9,90 @@
     margin: 0 auto;
     width: 100%;
 }
+
+.formation, .more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap:10px;
+    padding-bottom:50px;
+    align-items: center;
+
+    h2{
+        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 30px;
+    }
+
+    p{
+        font-size:20px;
+    }
+}
+
+.formation p{
+    padding-bottom:0;
+}
+
+.more{
+    color: $white;
+    background-image: url('../../public/assets/banner/fond-2.webp'); 
+    background-size:100vh;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.more p{
+    padding-bottom:15px;
+    text-shadow: 0 0 15px $gold;
+}
+
+@media (max-width: $smallScreen) {
+
+    .AboutContainer{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .formation h2, .more  h2{
+        font-size:20px;
+        padding:0;
+        padding-top:10px;
+    }
+
+    .formation, .more {
+        gap:20px;
+        padding-bottom: 30px;        
+    }
+
+    .formation p {
+        margin: 0;
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+
+    .more p {
+        margin: 0;
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        
+    }
+
+    .more button {
+        margin-top: 0px;
+    }
+
+    .more h2{
+        padding-bottom:0px;
+    }
+
+    .AboutContainer {
+        min-height: 0vh;  
+        }
+}

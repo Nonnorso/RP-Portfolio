@@ -3,17 +3,41 @@
 .profile-container{
     display:flex;
     background-color: $black;
+    border-radius:25px;
+
+    img{
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
 }
 
 .profile-pic{
-    width:250px;
+    width:20%;
     height:250px;
-
+    object-fit: cover;
+    mix-blend-mode: luminosity;
 }
 
 .profile-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: $white;
+    width:80%;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top: 0;
+    gap:20px;
 
+    h2{
+        padding-left:0px;
+        padding-bottom:0px;
+        padding-top:0px;
+    }
+
+    p{
+        font-size: 18px;
+    }
 }
 
 .profile-initial{
@@ -25,4 +49,67 @@
     margin:0;
     padding:0;
 
+}
+
+.more button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: $white;
+    height: 40px;
+    transition: all 0.4s ease;
+    margin-top:15px;
+
+    a{
+        text-decoration: none ;
+        color: $black;
+        padding-bottom:5px;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1em;
+        transition: font-size 0.4s ease;
+    }
+
+    &:hover {
+        border: 2px solid $gold;
+        box-shadow: 0 0 20px $gold; 
+        border-radius: 25px;
+        transform: scale(1.1);
+        
+    }
+}
+
+.more p{
+    margin: 0;
+    font-size: 20px;
+    padding-left:100px;
+    padding-right: 100px;
+    padding-bottom: 0px;
+}
+
+@media (max-width: $smallScreen) {
+    .profile-container {
+        max-height: 250px;
+        margin-bottom: 10px;
+    }
+
+    .profile-text{
+        padding-left:10px;
+        padding-right:10px;
+        padding-top: 0;
+        gap:10px;
+    
+        h2{
+            font-size:15px;
+            padding-left:0px;
+            padding-bottom:0px;
+            padding-top:0px;
+        }
+    
+        p{
+            font-size: 12px;
+        }
+    }
 }
