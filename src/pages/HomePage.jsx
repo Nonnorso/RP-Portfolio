@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../styles/HomePage.scss';
 import Banner from '../components/Banner'
 import SkillCard from '../components/SkillCard'
@@ -8,6 +8,11 @@ import data from '../Data/data.json';
 
 function HomePage() {
   const navigate = useNavigate();
+
+  const handleNavigateToTop = (path) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
 
   const handleNavigate = (projectId) => {
     navigate(`${projectId}`);
@@ -32,7 +37,7 @@ function HomePage() {
           <h2>Mes dernieres realisations</h2>
           <ProjectCard projects={latestProjects} onNavigate={handleNavigate} />
           <p>Vous souhaitez découvrir l'ensemble de mes travaux ? Consultez la page complète de tous mes projets. Vous y trouverez une variété de projets mettant en avant mes compétences et ma passion pour le développement web.</p>
-          <button><Link to="/Portfolio">Tous mes projets</Link></button>
+          <button onClick={() => handleNavigateToTop('/Portfolio')}>Tous mes projets</button>
         </section>
       </div>
     </div>

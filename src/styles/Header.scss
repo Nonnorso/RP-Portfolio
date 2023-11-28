@@ -3,14 +3,17 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    margin-right: 100px;
-    margin-left: 100px;
+    position: sticky;
+    top: 0;
+    padding-right: 100px;
+    padding-left: 100px;
     margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
 
     @media (max-width: $smallScreen) {
-      margin-right: 30px;
-      margin-left: 30px;
+      padding-right: 30px;
+      padding-left: 30px;
     }
   }
   
@@ -19,6 +22,7 @@
     color: $black;
     position: relative;
     overflow: hidden;
+    
   }
 
   .header-title a::after {
@@ -57,9 +61,9 @@
     overflow: hidden;
     position: absolute;
     top: 75%;
-    right: -20px;
+    right: 10px;
     width: 80px;
-    background-color: $white;
+    background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 2px 5px $black; 
     transform-origin: top center;
     animation: slideDownAnimation 0.4s ease-out;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Link,NavLink } from 'react-router-dom';
+import { Link,NavLink, useNavigate } from 'react-router-dom';
 import '../styles/Header.scss';
 
 const Header = () => {
@@ -40,17 +40,24 @@ const Header = () => {
     };
   }, [handleOutsideClick]);
 
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
+
   return (
     <div className="header-container">
       <div className="header-title">
-        <h1><Link to="/"><span className='InitialGold'>N</span>onnorso</Link></h1>
+        <h1><Link to="/" onClick={() => handleNavigate('/')}><span className='InitialGold'>N</span>onnorso</Link></h1>
       </div>
       {isMobile ? null : (
         <div className='DesktopNav'>
           <ul>
-            <li><NavLink to="/" activeclassname="active">Accueil</NavLink></li>
-            <li><NavLink to="/about" activeclassname="active">À propos</NavLink></li>
-            <li><NavLink to="/portfolio" activeclassname="active">Portfolio</NavLink></li>
+            <li><NavLink to="/" onClick={() => handleNavigate('/')} activeclassname="active">Accueil</NavLink></li>
+            <li><NavLink to="/about" onClick={() => handleNavigate('/about')} activeclassname="active">À propos</NavLink></li>
+            <li><NavLink to="/portfolio" onClick={() => handleNavigate('/portfolio')} activeclassname="active">Portfolio</NavLink></li>
           </ul>
         </div>
       )}
@@ -70,9 +77,9 @@ const Header = () => {
       {isMobile ? (
         <nav className={`menu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
-            <li><Link to="/" onClick={closeMenu}>Accueil</Link></li>
-            <li><Link to="/about" onClick={closeMenu}>À propos</Link></li>
-            <li><Link to="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
+            <li><Link to="/" onClick={() => { handleNavigate('/'); closeMenu(); }}>Accueil</Link></li>
+            <li><Link to="/about" onClick={() => { handleNavigate('/about'); closeMenu(); }}>À propos</Link></li>
+            <li><Link to="/portfolio" onClick={() => { handleNavigate('/portfolio'); closeMenu(); }}>Portfolio</Link></li>
           </ul>
         </nav>
       ) : null}
