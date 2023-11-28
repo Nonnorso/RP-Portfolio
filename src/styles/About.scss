@@ -1,9 +1,5 @@
 @import 'settings.scss';
 
-.AboutContainer {
-    min-height: 100vh;  
-    }
-
 .AboutContent {
     max-width: 1440px;
     margin: 0 auto;
@@ -85,6 +81,7 @@
 
     .more button {
         margin-top: 0px;
+        cursor: pointer;
     }
 
     .more h2{
