@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Project from "../components/Projetct";
 import PreviewProject from "../components/PreviewProject";
 import data from '../Data/data.json';
+import "../styles/Projet.scss"
 
 export default function Projects() {
   const { projectId } = useParams();
@@ -13,9 +14,9 @@ export default function Projects() {
   }
 
   return (
-    <div>
+    <div className="ProjetContent">
       <img
-        className="projectbanner"
+        className="ProjetBanner"
         src={`${process.env.PUBLIC_URL}/${projectToShow.image_acceuil}`}
         alt="project-banner"
         title="project-banner"
