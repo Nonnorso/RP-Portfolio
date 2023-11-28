@@ -14,16 +14,18 @@ export default function Projects() {
   }
 
   return (
-    <div className="ProjetContent">
-      <img
-        className="ProjetBanner"
-        src={`${process.env.PUBLIC_URL}/${projectToShow.image_acceuil}`}
-        alt="project-banner"
-        title="project-banner"
-      />
-      <div key={projectId}>
-        <Project project={projectToShow} />
-        <PreviewProject project={projectToShow} />
+    <div className="ProjetContainer">
+      <div className="ProjetContent">
+        <img
+          className="ProjetBanner"
+          src={`${process.env.PUBLIC_URL}/${projectToShow.image_acceuil}`}
+          alt="project-banner"
+          title="project-banner"
+        />
+        <div key={projectId}>
+          <Project project={projectToShow} />
+          <PreviewProject project={projectToShow} />
+        </div>
       </div>
     </div>
   );

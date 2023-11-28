@@ -1,5 +1,13 @@
 @import 'settings.scss';
 
+.PortfolioContainer{
+    
+    @media (max-width: 768px) {
+    margin-left: 15px;
+    margin-right: 15px;
+    }
+}
+
 .PortfolioContent {
     max-width: 1440px;
     margin: 0 auto;

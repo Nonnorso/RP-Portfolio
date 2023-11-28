@@ -14,6 +14,7 @@ export default function Portfolio (){
   };
 
     return ( 
+      <div className="PortfolioContainer">
         <div className="PortfolioContent">
           <Banner data={data.banner[1]} afficherBouton={false}/>
 
@@ -22,5 +23,6 @@ export default function Portfolio (){
             <ProjectCard projects={data.projets} onNavigate={handleNavigate}/>        
           </section>
         </div>
+      </div>
       );
 }

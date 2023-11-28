@@ -37,24 +37,20 @@ export default function PreviewProject({ project }) {
               />
             </div>
 
-            <div className="CarousselCounter SmallText WhiteText">
-              {currentIndex + 1}/{project.images_apercu.length}
-            </div>
-
-            <div className="CarousselCounter SmallText WhiteText">
+            <div className="CarousselCounter">
               {currentIndex + 1}/{project.images_apercu.length}
             </div>
 
             <div className="CarousselNav">
               <img
-                src={leftArrowIcon}
+                src={rightArrowIcon}
                 alt="Previous"
                 className="NavArrow LeftArrow"
                 onClick={handlePrevClick}
               />
 
               <img
-                src={rightArrowIcon}
+                src={leftArrowIcon}
                 alt="Next"
                 className="NavArrow RightArrow"
                 onClick={handleNextClick}
