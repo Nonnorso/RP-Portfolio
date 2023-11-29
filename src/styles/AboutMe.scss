@@ -33,10 +33,12 @@
         padding-left:0px;
         padding-bottom:0px;
         padding-top:0px;
+        text-shadow: 0 0 black;
     }
 
     p{
         font-size: 18px;
+        text-shadow: 0 0 black;
     }
 }
 
@@ -68,7 +70,8 @@
         padding-top: 5px;
         padding-left: 15px;
         padding-right: 15px;
-        font-size: 1em;
+        font-size: 16px;
+        text-shadow: 0 0 black;
         transition: font-size 0.4s ease;
     }
 
@@ -87,12 +90,12 @@
     padding-left:100px;
     padding-right: 100px;
     padding-bottom: 0px;
+    text-shadow: 0 0 black;
 }
 
 @media (max-width: $smallScreen) {
     .profile-container {
         max-height: 250px;
-        margin-bottom: 10px;
     }
 
     .profile-text{

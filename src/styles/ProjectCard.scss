@@ -5,12 +5,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px;
     color: $black;
 
     h2, p{
         margin:0;
         padding: 0;
+        text-shadow: 0 0 black;
     }
 
     .dimensionsCard {
@@ -33,7 +34,7 @@
                 text-overflow: clip;  
                 white-space: normal;  
                 overflow: visible; 
-                height: 150px;
+                height: 130px;
             }
         }
 
@@ -86,7 +87,8 @@
                 padding-top: 5px;
                 padding-left: 15px;
                 padding-right: 15px;
-                font-size: 1em;
+                font-size: 16px;
+                text-shadow: 0 0 black;
                 transition: font-size 0.4s ease;
             }
     

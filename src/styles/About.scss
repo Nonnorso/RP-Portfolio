@@ -13,19 +13,21 @@
     text-align: center;
     gap:10px;
     padding-bottom:50px;
-    padding-top: 50px;
+    padding-top: 40px;
     align-items: center;
 
     h2{
         padding-bottom: 30px;
-        padding-top: 20px;
+        padding-top: 10px;
         padding-left: 0;
         padding-right: 0;
         font-size: 30px;
+        text-shadow: 0 0 black;
     }
 
     p{
         font-size:20px;
+        text-shadow: 0 0 black;
     }
 }
 
@@ -56,11 +58,13 @@
         font-size:20px;
         padding:0;
         padding-top:10px;
+        padding-bottom: 0px;
     }
 
     .formation, .more {
         gap:20px;
-        padding-bottom: 30px;        
+        padding-bottom: 30px; 
+        padding-top:20px;       
     }
 
     .formation p {

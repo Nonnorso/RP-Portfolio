@@ -13,7 +13,8 @@
     color: $white;
     margin: 0px;
     padding:0px;
-    font-size:20px
+    font-size:20px;
+    text-shadow: 0 0 black;
   }
 
   @media (max-width: $smallScreen) {
@@ -28,7 +29,8 @@
   color: $white;
   display: inline-block;
   border-bottom: 2px solid transparent;
-  transition: border-bottom 0.4s ease
+  transition: border-bottom 0.4s ease;
+  text-shadow: 0 0 black;
 }
 
 .footer-container a:hover{
@@ -52,4 +54,5 @@
 
 .icon {
   font-size: 20px;
+  text-shadow: 0 0 black;
 }
