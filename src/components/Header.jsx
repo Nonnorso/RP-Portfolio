@@ -4,7 +4,7 @@ import '../styles/Header.scss';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 880);
 
   const toggleMenu = useCallback(() => {
     setMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
@@ -22,7 +22,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 880);
     };
 
     window.addEventListener('resize', handleResize);
