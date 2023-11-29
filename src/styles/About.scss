@@ -36,11 +36,31 @@
 }
 
 .more{
+    position: relative;
     color: $white;
     background-image: url('../../public/assets/banner/fond-2.webp'); 
     background-size:100vh;
     border-radius: 25px;
     margin-bottom: 10px;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgb(0, 0, 0, 0.4);
+        border-radius: 25px;
+        mix-blend-mode: darken; 
+        z-index: 1;
+    }
+
+    h2, p, button {
+        position: relative; 
+        z-index: 2; 
+    }
 }
 
 .more p{

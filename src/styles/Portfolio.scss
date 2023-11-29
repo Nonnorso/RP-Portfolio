@@ -16,6 +16,8 @@
 }
 
 .Projects{
+    position:relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -30,14 +32,33 @@
     margin-bottom: 10px;
     margin-top: 10px;
 
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgb(0, 0, 0, 0.4);
+        border-radius: 25px;
+        mix-blend-mode: darken; 
+        z-index: 1;
+    }
+
     h2 {
         font-size: 30px;
         text-shadow: 0 0 black;
+        z-index: 2;
     } 
     
     p {
         font-size: 20px;
         text-shadow: 0 0 black;
+        z-index: 2;
+    }
+
+    .project-card{
+        z-index: 2;
     }
 }
 

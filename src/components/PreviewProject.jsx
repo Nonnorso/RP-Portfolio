@@ -37,10 +37,6 @@ export default function PreviewProject({ project }) {
               />
             </div>
 
-            <div className="CarousselCounter">
-              {currentIndex + 1}/{project.images_apercu.length}
-            </div>
-
             <div className="CarousselNav">
               <img
                 src={rightArrowIcon}
