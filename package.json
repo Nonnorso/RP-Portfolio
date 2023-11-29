@@ -1,6 +1,5 @@
 {
-  "homepage": "https://nonnorso.github.io/RP-Portfolio",
-  "name": "rp-portfolio",
+  "name": "raphael-philippot-front-end-web-developer-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
