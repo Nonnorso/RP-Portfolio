@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Project from "../components/Projetct";
 import PreviewProject from "../components/PreviewProject";
 import data from '../Data/data.json';
@@ -10,7 +11,10 @@ export default function Projects() {
   const projectToShow = data.projets.find(project => project.id === parseInt(projectId));
 
   if (!projectToShow) {
-    return <div>Projet non trouvé</div>;
+    return <div className="Style404"> 
+      <p className="ProjectNotFound">Oups ! Le projet n'existe pas !</p>
+      <Link to="/Portfolio" >Selectionner un projet existant</Link>
+    </div>;
   }
 
   return (
