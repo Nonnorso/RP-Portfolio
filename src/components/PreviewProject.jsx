@@ -60,8 +60,9 @@ export default function PreviewProject({ project }) {
         </>
       )}
 
-      <button onClick={openCodeLink}>Voir le code</button>
-      <button onClick={openSiteLink}>Voir le site</button>
+      <div classname="linkButton">
+        <button onClick={openCodeLink}>Voir le code</button>
+        <button onClick={openSiteLink}>Voir le site</button> </div>
     </div>
   );
 }
