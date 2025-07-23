@@ -19,7 +19,8 @@
         "description_complete": "Création d'un site Web en HTML5 / CSS3, à l'aide d'une maquette proposée vie l'outil Figma. Manipulation des techniques css flexbox et grid, pour obtenir des visuels propres et ordonnés, autant en mode desktop, qu'en version mobile.",
         "image_acceuil": "assets/booki/acceuil-booki.webp",
         "images_apercu": ["assets/booki/booki-1.webp", "assets/booki/booki-2.webp", "assets/booki/booki-3.webp"],
-        "code" : "https://github.com/Nonnorso/Booki.git"
+        "code" : "https://github.com/Nonnorso/Booki.git",
+        "site" :"https://booki-neon.vercel.app/"
       },
       {
         "id":1,
@@ -28,7 +29,8 @@
         "description_complete": "Création d'un site mobile first, incluant de nombreuses animations, notamment de survol, selection et chargement, en vue de developper une page interactive pour un projet de commande en ligne de menus aupres des restaurants participants. Conçu pour les formats mobile, le site s'adapte également aux plus grands formats pour une accessibilité sur tous types d'écrans.",
         "image_acceuil": "assets/ohmyfood/acceuil-ohmyfood.webp",
         "images_apercu": ["assets/ohmyfood/ohmyfood-1.webp", "assets/ohmyfood/ohmyfood-2.webp", "assets/ohmyfood/ohmyfood-3.webp"],
-        "code" : "https://github.com/Nonnorso/Projet-4-OhMyFood-Philippot-Raphael.git"
+        "code" : "https://github.com/Nonnorso/Projet-4-OhMyFood-Philippot-Raphael.git",
+        "site" :"https://projet-4-oh-my-food-philippot-rapha.vercel.app/"
       },
       {
         "id":2,
@@ -37,7 +39,8 @@
         "description_complete": "Mise à jour d'un site internet d'impression HMTL5 / CSS3. Remplacement de la bannière statique du site par un carrousel d'images décrivant toutes leurs prestations au fur et à mesure du défilement des slides. Configuration d'un défilemnt infini ordonné, et ajouts de bulletpoints permettant une navigation fluide et selective des diapos. ",
         "image_acceuil": "assets/printit/acceuil-printit.webp",
         "images_apercu": ["assets/printit/printit-1.webp", "assets/printit/printit-2.webp", "assets/printit/printit-3.webp"],
-        "code" : "https://github.com/Nonnorso/Print_It.git"
+        "code" : "https://github.com/Nonnorso/Print_It.git",
+        "site" : "https://print-it-wine.vercel.app/"
       },
       {
         "id":3,
@@ -46,7 +49,8 @@
         "description_complete": "Mise à jour du site de Sophie Bluel Architecte afin de dynamiser la gestion de sa gallerie. Importation des travaux depuis une API REST, gestion des travaux au travers de modales dynamiques créées en JavaScript et gestion des operations de récuperation, tri et suppression des travaux de la gallerie grâces aux requettes API. Rendu des modifications apportées instantanné avec JavaScript.",
         "image_acceuil": "assets/sba/acceuil-sba.webp",
         "images_apercu": ["assets/sba/sba-1.webp", "assets/sba/sba-2.webp", "assets/sba/sba-3.webp"],
-        "code" : "https://github.com/Nonnorso/Sophie_Bluel_Architecte.git"
+        "code" : "https://github.com/Nonnorso/Sophie_Bluel_Architecte.git",
+        "site" : "https://sophie-bluel-architecte-theta.vercel.app/"
       },
       {
         "id":4,
@@ -55,7 +59,8 @@
         "description_complete": "Création d'une application React pour la mise en location de logements, configuration d'un routage avec des pages securisées et chargement dynamique des données au format Json. Possibilité d'herberger les données auprès d'une API. Création de divers composants interactifs et réutilisables, proposant à l'utilisateur une panel de fonctionnalités interactives au travers de composants animés.",
         "image_acceuil": "assets/kasa/acceuil-kasa.webp",
         "images_apercu": ["assets/kasa/kasa-1.webp", "assets/kasa/kasa-2.webp", "assets/kasa/kasa-3.webp"],
-        "code" : "https://github.com/Nonnorso/Creez_une_application_web_de_location_immobiliere_avec_React.git"
+        "code" : "https://github.com/Nonnorso/Creez_une_application_web_de_location_immobiliere_avec_React.git",
+        "site" : "https://creez-une-application-web-de-locati.vercel.app/"
       },
       {
         "id":5,
@@ -64,7 +69,8 @@
         "description_complete": "Optimisation du réferencement d'un site HTML5 / CSS3 / Javascript de Nina Carducci Photographe. Analyse approfondie du code et refonte sémantique complète, gestion du poids des données d'images en les compressant et utilisant des formats plus adaptés au web, et de bibliotheques, et autres fichiers de scripts en les minifiants. Ajout d'un referencement local pour accroitre la visibilité du site, et des balises de partages sur les principaux réseaux sociaux.",
         "image_acceuil": "assets/ncp/acceuil-ncp.webp",
         "images_apercu": ["assets/ncp/ncp-1.webp", "assets/ncp/ncp-2.webp", "assets/ncp/ncp-3.webp"],
-        "code" :"https://github.com/Nonnorso/Optimisez-le-referencement-d-un-site-de-photographe.git"
+        "code" :"https://github.com/Nonnorso/Optimisez-le-referencement-d-un-site-de-photographe.git",
+        "site" : "https://optimisez-le-referencement-d-un-sit.vercel.app/"
       },
       {
         "id":6,
@@ -73,7 +79,8 @@
         "description_complete": "Correction et achèvement d'une application React d'une agence d'évenementiel. Analyse approfondie du code, et des tests unitaires prévus pour assurer le bon fonctionnement des composants. Correction des composants et de l'entièreté du code, pour permettre le bon fonctionnement de toutes les fonctionnalitées prévues et désirées de l'agence pour son application web.",
         "image_acceuil": "assets/724e/acceuil-724e.webp",
         "images_apercu": ["assets/724e/724e-1.webp", "assets/724e/724e-2.webp", "assets/724e/724e-3.webp"],
-        "code" : "https://github.com/Nonnorso/Debuggez-le-site-d-une-agence-d-evenementiel.git"
+        "code" : "https://github.com/Nonnorso/Debuggez-le-site-d-une-agence-d-evenementiel.git",
+        "site" : "https://debuggez-le-site-d-une-agence-d-eve.vercel.app/"
       },
       {
         "id":7,
@@ -82,7 +89,8 @@
         "description_complete": "Création d'une application de banque avec React, et gestion de l'état avec Redux. Création d'une route protegées et gestion des authentification renforcée avec un token fournis par l'API uniquement avec les bons identifiants de l'utilisateur enregistré. Vérification à toutes étapes de la navigation de l'utilisateur connecté, de la présence et authenticité du token fournis, et sécurisation des données à tout moment. Dynamisation de l'application gérée par Redux et le store provider, gestion de l'état et des modifications au niveau du front end en simultané avec les modifications apportées au back-end grâce à la communication à l'API et à Redux.",
         "image_acceuil": "assets/argentbank/acceuil-argentbank.webp",
         "images_apercu": ["assets/argentbank/argentbank-1.webp", "assets/argentbank/argentbank-2.webp", "assets/argentbank/argentbank-3.webp"],
-        "code" : "https://github.com/Nonnorso/ArgentBank.git"
+        "code" : "https://github.com/Nonnorso/ArgentBank.git",
+        "site" : "https://argent-bank-rust.vercel.app/"
       }
     ],
     "skills": [

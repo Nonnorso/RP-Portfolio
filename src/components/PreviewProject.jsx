@@ -14,6 +14,10 @@ export default function PreviewProject({ project }) {
     window.open(project.code, "_blank");
   };
 
+  const openSiteLink = () => {
+    window.open(project.site, "_blank");
+  };
+
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? project.images_apercu.length - 1 : prevIndex - 1));
   };
@@ -57,6 +61,7 @@ export default function PreviewProject({ project }) {
       )}
 
       <button onClick={openCodeLink}>Voir le code</button>
+      <button onClick={openSiteLink}>Voir le site</button>
     </div>
   );
 }
